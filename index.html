@@ -22,8 +22,7 @@
             <p style="font-family: sans-serif; font-size: 17px"> 
                 Learn Web Development and make your own website. Join me and start your journey as a web developer.
             </p>
-            <a href="https://wa.me/7042178046" target="_blank">Contact me</a>
-
+            <a id="con" href="#" target="_blank">Contact me</a>
             </div>
             <div class="imgBox">
                 <img src="./assests/IMG_1617-Picsart-BackgroundRemover.JPG" alt="image">
@@ -43,6 +42,15 @@
 </ul>
 
         </section>      
-    <script src="index.js"></script>    
+        <script src="index.js"></script>
+        <script>
+            document.getElementById('con').addEventListener('click', function(e) {
+                e.preventDefault();
+                var phone = '7042178046';
+                var message = 'connect for making websites';
+                var url = 'https://wa.me/' + phone + '?text=' + encodeURI(message);
+                window.open(url, '_blank');
+            });
+        </script>
     </body>
 </html>
