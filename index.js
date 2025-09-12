@@ -19,7 +19,15 @@ banner.addEventListener('click', toggle);
 
  const menu = document.querySelector('.menu');
  menu.addEventListener('click', toggle);
- menu.addEventListener('click', (e) => {
-// e.stopPropagation();
- });
- ;
+const aboutBtn = document.getElementById('About-btn');
+aboutBtn.addEventListener('click', () => {
+  window.open('about.html', '_blank');
+});
+const userBtn = document.getElementById('User-btn');
+userBtn.addEventListener('click', () => {
+  window.open('user.html', '_blank');
+});
+const contact_btn = document.getElementById('Contact-btn');
+contact_btn.addEventListener('click', () => {
+  window.open('contact.html', '_blank');
+});
