@@ -31,3 +31,11 @@ const contact_btn = document.getElementById('Contact-btn');
 contact_btn.addEventListener('click', () => {
   window.open('contact.html', '_blank');
 });
+//watchap text 
+            document.getElementById('con').addEventListener('click', function(e) {
+                e.preventDefault();
+                var phone = '7042178046';
+                var message = 'connect for making websites';
+                var url = 'https://wa.me/' + phone + '?text=' + encodeURI(message);
+                window.open(url, '_blank');
+            });
